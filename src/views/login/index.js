@@ -25,7 +25,7 @@ class LoginForm extends React.Component{
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 console.log('values:', values)
-                this.props.history.push('/a', { some: 'state' })
+                this.props.history.replace('/', { some: 'state' })
             }
         })
     }
